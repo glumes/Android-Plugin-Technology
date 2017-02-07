@@ -25,19 +25,17 @@ allprojects {
     }
 }
 
-//apply plugin: 'com.android.application'
-//apply plugin: 'android-apt'
-//apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
+
     defaultConfig {
-        applicationId "com.glumes.android_plugin_tech"
         minSdkVersion 22
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
@@ -51,18 +49,13 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-
     compile 'com.android.support:appcompat-v7:23.4.0'
     testCompile 'junit:junit:4.12'
-
-
-//    compile 'com.jakewharton:butterknife:8.4.0'
-//    apt 'com.jakewharton:butterknife-compiler:8.4.0'
-
-
 
     compile 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 
     compile 'com.android.support:multidex:1.0.1'
 }
+
+

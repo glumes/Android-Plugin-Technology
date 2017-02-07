@@ -1,1 +1,1 @@
-include ':app', ':hooktech'
+include ':app', ':hook_tech'
