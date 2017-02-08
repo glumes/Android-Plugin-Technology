@@ -1,4 +1,4 @@
-package hook_ams;
+package hook_activity_manager_service;
 
 import android.content.Context;
 
@@ -9,18 +9,10 @@ import java.lang.reflect.Proxy;
  * Created by zhaoying on 2017/1/23.
  */
 
-public class AmsHookUtil {
+public class ActivityManagerServiceHookUtil {
 
-    private Class<?> proxyActivity ;
-    private Context mContext ;
 
-    public AmsHookUtil(Class<?> proxyActivity, Context context) {
-        this.proxyActivity = proxyActivity;
-        mContext = context;
-    }
 
-    public AmsHookUtil() {
-    }
 
     public static void hookAms(){
         try {

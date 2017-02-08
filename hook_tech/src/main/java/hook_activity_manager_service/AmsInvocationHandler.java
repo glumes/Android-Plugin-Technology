@@ -1,4 +1,4 @@
-package hook_ams;
+package hook_activity_manager_service;
 
 import android.util.Log;
 

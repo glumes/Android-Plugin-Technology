@@ -11,12 +11,21 @@
     tools:context="com.glumes.hooktech.MainActivity">
 
     <Button
-        android:text="HookfAMS"
+        android:text="Hook_AMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
         android:layout_marginStart="37dp"
         android:layout_marginTop="36dp"
-        android:id="@+id/HookAms" />
+        android:id="@+id/HookAms"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:text="Hook_PMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/HookPms"
+        android:layout_below="@+id/HookAms"
+        android:layout_alignStart="@+id/HookAms"/>
 </RelativeLayout>

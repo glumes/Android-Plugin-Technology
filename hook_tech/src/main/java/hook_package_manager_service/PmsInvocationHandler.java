@@ -1,4 +1,4 @@
-package hook_pms;
+package hook_package_manager_service;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
