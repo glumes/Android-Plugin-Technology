@@ -21,7 +21,7 @@ public class AmsInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object o, Method method, Object[] objects) throws Throwable {
-        Log.d(TAG,"start hook");
+        Log.d(TAG,"hook ActivityManagerService");
         return method.invoke(iActivityManagerObject,objects);
     }
 }
