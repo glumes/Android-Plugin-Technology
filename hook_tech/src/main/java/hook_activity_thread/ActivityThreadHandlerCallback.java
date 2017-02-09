@@ -4,6 +4,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
+import timber.log.Timber;
+
 
 /**
  * Created by zhaoying on 2017/2/8.
@@ -22,9 +24,8 @@ public class ActivityThreadHandlerCallback implements Handler.Callback {
     @Override
     public boolean handleMessage(Message msg) {
 
-//        Timber.d("hook_activity_thread_handler_callback");
+        Timber.d("hook_activity_thread_handler_callback");
 
-        Log.d(TAG,"hook callback");
         /**
          *
          */

@@ -12,8 +12,6 @@ import java.lang.reflect.Proxy;
 public class ActivityManagerServiceHookUtil {
 
 
-
-
     public static void hookAms(){
         try {
             // 通过 Class 对象得到 JVM 中的这个类
