@@ -1,1 +1,1 @@
-include ':app', ':hook_tech', ':load-plugin-resource'
+include ':app', ':plugin-hook-tech', ':load-plugin-resource', ':load-plugin-class'
