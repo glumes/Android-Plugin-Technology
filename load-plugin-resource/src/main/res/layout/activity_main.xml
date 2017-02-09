@@ -9,6 +9,22 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.glumes.load_plugin_resource.MainActivity">
+    tools:context="com.glumes.load_plugin_resource.LoadPluginResourceActivity">
 
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/load_plugin_resrouce"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/loadPluginResource"/>
 </RelativeLayout>
