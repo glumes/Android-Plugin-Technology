@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">load-plugin-resource</string>
     <string name="load_plugin_resrouce">加载替换插件中的图片</string>
+    <string name="load_drawable">加载 drawable</string>
 </resources>

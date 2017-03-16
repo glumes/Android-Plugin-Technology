@@ -47,42 +47,6 @@ public class LoadPluginResourceActivity extends AppCompatActivity {
         mContext = this ;
     }
 
-    @OnClick({R.id.img, R.id.loadPluginResource})
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.img:
-
-                break;
-            case R.id.loadPluginResource:
-                try {
-                    AssetManager assetManager = PluginResources.getPluginAssetManager(apkPath);
-                    Resources resources = PluginResources.getPluginResources(mContext.getResources(),assetManager);
-                    // 加载了一个 ClassLoader 去反射
-                    DexClassLoader dexClassLoader = new DexClassLoader(apkPath,this.getDir("Dex",MODE_PRIVATE).getAbsolutePath(),
-                            null,getClassLoader());
 
 
-                    Class<?> loadClass = dexClassLoader.loadClass(packageName + ".R$drawable");
-                    Field[] declaredFields = loadClass.getDeclaredFields();
-
-                    for (Field field : declaredFields){
-                        if (field.getName().equals(resourceName)){
-                            int drawableId = field.getInt(R.drawable.class);
-                            // 通过 id 加载插件的内容
-                            Drawable drawable = resources.getDrawable(drawableId);
-
-                            mImage.setImageDrawable(drawable);
-
-                            Timber.e("id is %d",drawableId);
-                        }
-                    }
-
-
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    Timber.e("error msg is %s",e.getMessage());
-                }
-                break;
-        }
-    }
 }
