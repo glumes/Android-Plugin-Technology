@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PluginPackage</string>
+
+    <string name="plugin_string_text">Plugin</string>
+
+
 </resources>

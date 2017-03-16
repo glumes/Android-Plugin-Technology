@@ -3,4 +3,16 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="plugin_color_red">#FF0000</color>
+    <color name="plugin_color_blue">#0000FF</color>
+    <color name="plugin_color_green">#008000</color>
+    <color name="plugin_color_yellow">#FFFF00</color>
+    <color name="plugin_color_pink">#FFC0CB</color>
+    <color name="plugin_color_brown">#A52A2A</color>
+    <color name="plugin_color_gray">#808080</color>
+
+
+
+
 </resources>
