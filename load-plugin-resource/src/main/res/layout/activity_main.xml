@@ -24,7 +24,7 @@
         android:id="@+id/text"
         android:text="text"
         android:textSize="36sp"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:gravity="center"
         android:layout_toRightOf="@+id/image"
@@ -67,5 +67,16 @@
         />
 
 
+    <Button
+        android:id="@+id/loadDialog"
+        android:text="加载布局弹框"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:layout_below="@+id/laodBasicAttr"
+        />
 
 </RelativeLayout>

@@ -52,6 +52,7 @@ public class PluginResourceManager {
     public PluginResourceManager(Context mContext, String pluginPath) {
         this.mPluginPath = pluginPath;
         this.mContext = mContext;
+        createPluginResource();
     }
 
     /**
@@ -75,6 +76,17 @@ public class PluginResourceManager {
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+
+    /**
+     * 返回插件资源的 Id
+     * @param resName 资源的名称
+     * @param resType 资源的类型
+     * @return
+     */
+    public int getResourceId(String resName,String resType){
+       return mPluginResource.getIdentifier(resName,resType,mPluginPackageName);
     }
 
     /**
