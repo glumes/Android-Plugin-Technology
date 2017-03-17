@@ -138,10 +138,14 @@ public class PluginResourceManager {
 
     /**
      * 加载插件中的布局，并且根据布局返回 View
+     * 需要使用插件的 Context 才行
      * @param id
      * @return
      */
     public View getPluginLayoutView(@LayoutRes int id){
+
+        // 代码无效
+        Timber.d("id is %d",id);
         XmlResourceParser xmlResourceParser = mPluginResource.getLayout(id);
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         return inflater.inflate(xmlResourceParser,null);

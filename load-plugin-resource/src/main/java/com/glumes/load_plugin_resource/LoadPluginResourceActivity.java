@@ -1,13 +1,21 @@
 package com.glumes.load_plugin_resource;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.glumes.load_plugin_resource.util.AttrTypeConst;
@@ -60,7 +68,7 @@ public class LoadPluginResourceActivity extends AppCompatActivity {
                 changeImageAttr();
                 break;
             case R.id.loadDialog:
-
+                showPluginDialog();
                 break;
             default:
                 break;
@@ -91,7 +99,20 @@ public class LoadPluginResourceActivity extends AppCompatActivity {
 
     public void showPluginDialog(){
         View view = mResourceManager.getPluginLayoutView(
-                mResourceManager.getResourceId("")
-        )
+                mResourceManager.getResourceId("dialog_layout",AttrTypeConst.ATTRTYPE_LAYOUT)
+        );
+
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setView(view).create();
+
+        dialog.show();
+
+//        WindowManager.LayoutParams layoutParams = dialog.getWindow().getAttributes() ;
+//        layoutParams.width = WindowManager.LayoutParams.MATCH_PARENT ;
+//        layoutParams.height = WindowManager.LayoutParams.WRAP_CONTENT ;
+//        layoutParams.gravity = Gravity.CENTER ;
+//        dialog.getWindow().setAttributes(layoutParams);
+
+
     }
 }
